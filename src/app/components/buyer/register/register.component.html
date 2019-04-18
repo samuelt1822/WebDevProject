@@ -1,0 +1,47 @@
+<nav class="navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-text float-left">
+      <ul class="nav">
+        <li> <a class="nav-link" href="#">HOME</a> </li>
+        <li> <a class="nav-link" href="#">SHOWROOMS</a> </li>
+      </ul>
+    </div>
+    <div class="navbar-text float-right">
+      <ul class="nav">
+        <li> <a class="nav-link" href="#">MY ACCOUNT</a> </li>
+        <li> <a class="nav-link" href="#">CART</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<body>
+<h1 class="account-header">
+  Register
+</h1>
+<div class="container">
+  <br/>
+  <div *ngIf="errorFlag" class="alert alert-danger"> {{errorMsg}}</div>
+  <form (ngSubmit) = "register()" #form="ngForm">
+    <label>Username</label>
+    <input type="text" class="form-control" required [(ngModel)]="user.username" name="username" #username="ngModel"
+           id="usernameInput" placeholder="username">
+    <span class="help-block" *ngIf="!username.valid && username.touched"> Username is required. </span>
+    <br/>
+    <label>Password</label>
+    <input type="password" class="form-control" required ngModel #password="ngModel" name="password"
+           [(ngModel)]="user.password" id="passwordInput" placeholder="password">
+    <span class="help-block" *ngIf="!password.valid && password.touched"> Password is required. </span>
+    <label>Verify Password</label>
+    <input type="password" class="form-control" required [(ngModel)]="verifyPassword" name="verifyPassword"
+           id="passwordInput2" placeholder="verify password">
+    <br/>
+    <a class="btn btn-primary btn-block" id="register-button" (click)="register()">Register</a>
+    <a class="btn btn-warning btn-block" id="cancel-button" [routerLink]="['/login']">Cancel</a>
+  </form>
+</div>
+</body>
+<footer id="homepage-footer">
+  <!--<div class="container-fluid">
+    <img class="footer-img" src="/assets/WebDevFooter.png">
+  </div>-->
+</footer>

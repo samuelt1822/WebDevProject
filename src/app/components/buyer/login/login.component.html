@@ -1,0 +1,48 @@
+<nav class="navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-text float-left">
+      <ul class="nav">
+        <li> <a class="nav-link" href="#">HOME</a> </li>
+        <li> <a class="nav-link" href="#">SHOWROOMS</a> </li>
+      </ul>
+    </div>
+    <div class="navbar-text float-right">
+      <ul class="nav">
+        <li> <a class="nav-link" href="#">MY ACCOUNT</a> </li>
+        <li> <a class="nav-link" href="#">CART</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<body>
+<h1 class="account-header">
+  Account Login
+</h1>
+<hr>
+<div class="container">
+  <br/>
+  <form (ngSubmit) = "login()" #form="ngForm">
+    <label>Username</label>
+    <input type="text" class="form-control" name="username" placeholder="Username"
+           ngModel required #username="ngModel"/>
+      <br/>
+      <label>Password</label>
+      <input type="password" class="form-control" name="password" placeholder="Password"
+             ngModel required #password="ngModel"/>
+      <br/>
+      <button class="btn btn-primary btn-lg"  id="black-login" type="submit" [disabled]="!form.valid">Log In</button>
+    <a href="/facebook/login" class="btn btn-primary btn-block"> <span class="fa fa-facebook"></span> Facebook </a>
+
+    <p>
+      Don't Have An Account?
+    <br/>
+    <a routerLink="/register" id="account-link">Create an account</a>
+    </p>
+  </form>
+</div>
+</body>
+<footer id="homepage-footer">
+  <!--<div class="container-fluid">
+    <img class="footer-img" src="/assets/WebDevFooter.png">
+  </div>-->
+</footer>
