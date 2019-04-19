@@ -105,6 +105,35 @@ body {
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
-#star-color {
+.container2 {
+  position: relative;
+}
+.container3 {
+  position: relative;
+}
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.text-block-upper {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: rebeccapurple;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+hr.style13 {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+.black {
   color: black;
 }

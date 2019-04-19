@@ -11,8 +11,9 @@ import {SharedService} from '../../../services/shared.service';
 })
 export class MyaccountComponent implements OnInit {
   userId: String;
-  user: User = new User('', '', '', '', '', '');
+  user: User = new User('', '', '', '', '', '', false);
   username: String;
+  isSeller: Boolean;
 
   constructor(private router: Router, private userService: UserServiceClient, private sharedService: SharedService,
               private activatedRouter: ActivatedRoute) { }
@@ -27,6 +28,20 @@ export class MyaccountComponent implements OnInit {
       },
         (error: any) => {
         alert('Update failed.');
+        });
+  }
+
+  updateAsSeller() {
+    this.userId = this.user._id;
+    this.user.isSeller = true;
+    this.userService.updateUser(this.userId, this.user)
+      .subscribe((data: any) => {
+          console.log('Updating to seller');
+          this.user = data;
+          console.log(this.user);
+        },
+        (error: any) => {
+          alert('Update failed.');
         });
   }
 

@@ -3,12 +3,13 @@
     <div class="navbar-text float-left">
       <ul class="nav">
         <li> <a class="nav-link" href="#">HOME</a> </li>
-        <li> <a class="nav-link" href="#">SHOWROOMS</a> </li>
+        <li> <a class="nav-link" [routerLink]="['/Showroom']">SHOWROOMS</a> </li>
       </ul>
     </div>
     <div class="navbar-text float-right">
       <ul class="nav">
-        <li> <a class="nav-link" [routerLink]="['/login']">MY ACCOUNT</a> </li>
+        <li> <a class="nav-link" [routerLink]="['/MyAccount']">MY ACCOUNT</a> </li>
+        <li> <a routerLink="/wishList"><i class="fa fa-star" id="star-color"></i></a> </li>
         <li> <a class="nav-link" href="#">CART</a> </li>
       </ul>
     </div>
@@ -16,16 +17,16 @@
 </nav>
 <body>
 <div class="home-title">
-  <img class="title" src="/assets/WebDevTitle(small).png">
+  <img class="title" src="/assets/images/WebDevTitle(small).png">
 </div>
 <div>
-  <img class="carousel-image" src="/assets/LivingroomCover.jpg">
+  <img class="carousel-image" src="/assets/images/LivingroomCover.jpg">
 </div>
 <div class="container">
   <div class="row">
     <div class="col">
     <div class="card" style="width: 15rem;">
-      <img class="card-img-top" src="/assets/Placeholder.png" alt="Card image cap">
+      <img class="card-img-top" src="/assets/images/Placeholder.png" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -35,7 +36,7 @@
     </div>
     <div class="col">
     <div class="card" style="width: 15rem;">
-      <img class="card-img-top2" src="/assets/HomepageCard2.jpg" alt="Card image cap">
+      <img class="card-img-top2" src="/assets/images/HomepageCard2.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -45,7 +46,7 @@
     </div>
     <div class="col">
     <div class="card" style="width: 15rem;">
-      <img class="card-img-top" src="/assets/Placeholder.png" alt="Card image cap">
+      <img class="card-img-top" src="/assets/images/Placeholder.png" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -57,6 +58,16 @@
 
 </div>
 <footer id="homepage-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        Our Company <br/> About Us <br/>  Careers
+      </div>
+      <div class="col">
+        <a [routerLink]="['/VisitUs']"> Visit Us</a>
+      </div>
+    </div>
+  </div>
   <!--<div class="container-fluid">
     <img class="footer-img" src="/assets/WebDevFooter.png">
   </div>-->

@@ -105,6 +105,21 @@ body {
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
-#star-color {
-  color: black;
+.container2 {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+agm-map {
+  height: 500px;
+  width: 650px;
 }

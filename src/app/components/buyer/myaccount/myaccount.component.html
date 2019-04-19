@@ -3,12 +3,13 @@
     <div class="navbar-text float-left">
       <ul class="nav">
         <li> <a class="nav-link" href="#">HOME</a> </li>
-        <li> <a class="nav-link" href="#">SHOWROOMS</a> </li>
+        <li> <a class="nav-link" [routerLink]="['/Showroom']">SHOWROOMS</a> </li>
       </ul>
     </div>
     <div class="navbar-text float-right">
       <ul class="nav">
-        <li> <a class="nav-link" href="#">MY ACCOUNT</a> </li>
+        <li> <a class="nav-link" [routerLink]="['/MyAccount']">MY ACCOUNT</a> </li>
+        <li> <a routerLink="/wishList"><i class="fa fa-star" id="star-color"></i></a> </li>
         <li> <a class="nav-link" href="#">CART</a> </li>
       </ul>
     </div>
@@ -19,10 +20,12 @@
 <div class="sidenav">
   <a class="navbar-brand" href="#">MY ACCOUNT</a>
   <ul class="nav navbar-nav">
-    <li><a href="#">Wishlist</a></li>
+    <li><a routerLink="/wishList">WishList</a></li>
     <li><a href="#">Payment Methods</a></li>
     <li><a href="#">Order History</a></li>
     <li><a href="#">Profile</a></li>
+    <li *ngIf="!user.isSeller"><a (click)="updateAsSeller()">Become a Seller</a></li>
+    <li *ngIf="user.isSeller"><a href="#">Instructables Posted</a></li>
   </ul>
 </div>
 <!--end of side nav bar-->
@@ -54,6 +57,7 @@
   <br/>
   <a class="btn btn-success btn-block" id="update-button" (click)="update()">Update</a>
   <a class="btn btn-danger btn-block" id="logout-button" (click)="logout()">Logout</a>
+
 
 
 

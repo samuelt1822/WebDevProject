@@ -1,3 +1,4 @@
+<!doctype html>
 <nav class="navbar-fixed-top">
   <div class="container">
     <div class="navbar-text float-left">
@@ -8,24 +9,18 @@
     </div>
     <div class="navbar-text float-right">
       <ul class="nav">
-        <li *ngIf=" "> <a class="nav-link" [routerLink]="['/MyAccount']">MY ACCOUNT</a> </li>
+        <li> <a class="nav-link" [routerLink]="['/login']">MY ACCOUNT</a> </li>
         <li> <a class="nav-link" href="#">CART</a> </li>
       </ul>
     </div>
   </div>
 </nav>
 <body>
-<!--Side Nav Bar-->
-<div class="sidenav">
-  <a class="navbar-brand" href="#">MY ACCOUNT</a>
-  <ul class="nav navbar-nav">
-    <li><a href="#">WishList</a></li>
-    <li><a href="#">Payment Methods</a></li>
-    <li><a href="#">Order History</a></li>
-    <li><a href="#">Profile</a></li>
-  </ul>
-</div>
-<!--end of side nav bar-->
-<div class="side-wrapper">
-</div>
+<p>My Google Maps Demo</p>
+<agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
+  <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+
+
 </body>
+

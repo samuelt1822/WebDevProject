@@ -1,0 +1,53 @@
+<nav class="navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-text float-left">
+      <ul class="nav">
+        <li> <a class="nav-link" href="#">HOME</a> </li>
+        <li> <a class="nav-link" [routerLink]="['/Showroom']">SHOWROOMS</a> </li>
+      </ul>
+    </div>
+    <div class="navbar-text float-right">
+      <ul class="nav">
+        <li> <a class="nav-link" [routerLink]="['/MyAccount']">MY ACCOUNT</a> </li>
+        <li> <a class="nav-link" href="#">CART</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<body>
+<img style="align: center" src="/assets/images/LivingRoom1.png">
+<hr class="style13">
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Buy</th>
+    <th scope="col">DIY</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <div class="container2">
+      <td><img src="/assets/images/BookShelf_LR_Buy.png"></td>
+      <div class="text-block-upper">
+        <i class="fa fa-star"></i>
+      </div>
+      <div class="text-block">
+        <a href="https://www.westelm.com/products/7952019/?catalogId=18&cm_re=curalate-_-livingroom&utm_source=curalate
+        _reveal&utm_medium=curalate_reveal_6860&crl8_id=2ac80c8d-df38-442c-addb-93ead83ddf22">
+          <h2>$119 <br/> Buy</h2>
+        </a>
+      </div>
+    </div>
+    <div class="container3">
+      <td><img style="width:448px; height:480px"src="/assets/images/DIYBookshelf_LR.jpg"></td>
+      <div class="text-block">
+        <i class="fa fa-star-o"></i>
+        <a [routerLink]="['/Bathroom']">
+          <h2>$79 <br/> DIY</h2>
+        </a>
+      </div>
+    </div>
+  </tr>
+  </tbody>
+</table>
+</body>

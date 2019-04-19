@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
-//var websiteSchema = require ('../website/website.schema.server');
+var wishListSchema = require('../wishlist/wishlist.schema.server')
+/*var diy_sSchema = require()*/
 
 var userSchema = new mongoose.Schema(
   {username: String,
@@ -9,8 +10,11 @@ var userSchema = new mongoose.Schema(
     email: String,
     facebook: {token: String, id: String,},
     phone: String,
+    isSeller: Boolean,
+    wishListItems: [wishListSchema],
+
     dateCreated: {type: Date, default: Date.now()}},
   {collection: 'Users'});
 
 module.exports = userSchema;
-//add in Instructables and Saved*/
+//add in Cart if time */
