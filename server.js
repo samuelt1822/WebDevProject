@@ -45,8 +45,8 @@ const server = http.createServer(app);
 server.listen( port , () => console.log('Running on port 3200'));
 
 //Database requirements
-var connectionString = 'mongodb://127.0.0.1:27017/webDevFinal';
-//var connectionString = process.env.MONGODB_URI;
+//var connectionString = 'mongodb://127.0.0.1:27017/webDevFinal';
+var connectionString = process.env.MONGODB_URI;
 
 /** To use database var connectionString = process.env.MONGODB_URI;
 */
