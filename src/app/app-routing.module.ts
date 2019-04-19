@@ -28,6 +28,7 @@ const routes: Routes = [
   {path: 'Bedroom', component: BedroomComponent},
   {path: 'Outdoor', component: OutdoorRoomsComponent},
   {path: 'wishList', component: WishlistComponent, canActivate: [AuthGuard]},
+  {path: 'user/:uid', component: WishlistComponent},
   {path: 'VisitUs', component: VisitComponent},
   {path: 'user/:uid/DIYs', component: DiySComponent}
 ];

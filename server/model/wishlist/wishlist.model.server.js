@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var wishListSchema = require('./wishlist.schema.server');
-var wishListModel = mongoose.model("Website",wishListSchema);
+var wishListModel = mongoose.model("WishList",wishListSchema);
 
 var userModel = require('../user/user.model.server');
 
