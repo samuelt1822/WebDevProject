@@ -18,7 +18,7 @@ module.exports = function (app) {
   app.post('/api/login', passport.authenticate('local'), login);
   app.post('/api/logout', logout);
   app.post('/api/register', register);
-  app.post('/api/loggedIn', loggedIn);
+  //app.post('/api/loggedIn', loggedIn);
 
   var facebookConfig = {
     clientID: process.env.FACEBOOK_CLIENT_ID || 473830713359097,
@@ -128,23 +128,6 @@ module.exports = function (app) {
             return done(err);
           } } );
   }
-
-  /*function createUser(req, res) {
-    var user = req.body;
-    userModel
-      .createUser(user)
-      .then(
-        function (user) {
-          console.log("user successfully created!");
-          res.json(user);
-        },
-        function (error) {
-          if (error) {console.log(error);
-            res.status(400).send(error);
-          }
-        }
-      )
-  }*/
 
   function createUser(req, res) {
     console.log(req.body);
