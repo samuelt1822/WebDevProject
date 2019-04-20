@@ -18,7 +18,7 @@ module.exports = function (app) {
   app.post('/api/login', passport.authenticate('local'), login);
   app.post('/api/logout', logout);
   app.post('/api/register', register);
-  //app.post('/api/loggedIn', loggedIn);
+  app.post('/api/loggedIn', loggedIn);
 
   var facebookConfig = {
     clientID: process.env.FACEBOOK_CLIENT_ID || 473830713359097,
