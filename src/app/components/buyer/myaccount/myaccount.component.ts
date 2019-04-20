@@ -31,6 +31,10 @@ export class MyaccountComponent implements OnInit {
         });
   }
 
+  refresh(): void {
+    window.location.reload();
+  }
+
   updateAsSeller() {
     this.userId = this.user._id;
     this.user.isSeller = true;

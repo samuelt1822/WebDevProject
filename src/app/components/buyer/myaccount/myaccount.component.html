@@ -55,7 +55,10 @@
   <label>Email</label>
   <input [(ngModel)]="user['email']" class="form-control" id="email" placeholder="Email"/>
   <br/>
-  <a class="btn btn-success btn-block" id="update-button" (click)="update()">Update</a>
+  <!--wrapped in a reload to refresh profile with updated information-->
+  <button (click)="refresh()"><a class="btn btn-success btn-block" id="update-button" (click)="update()">
+    Update</a></button>
+  <!--<a class="btn btn-success btn-block" id="update-button" (click)="update()">Update</a>-->
   <a class="btn btn-danger btn-block" id="logout-button" (click)="logout()">Logout</a>
 
 
