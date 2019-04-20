@@ -21,12 +21,12 @@ module.exports = function (app) {
   app.post('/api/loggedIn', loggedIn);
 
   var facebookConfig = {
-    clientID: process.env.FACEBOOK_CLIENT_ID || '473830713359097',
+    /*clientID: process.env.FACEBOOK_CLIENT_ID || 473830713359097,
     clientSecret: process.env.FACEBOOK_SECRET_ID || 'fed70fcdecca58d1568e9177275471ce',
-    callbackURL: process.env.FACEBOOK_CALLBACK || '/auth/facebook/callback'
-    /*clientID: process.env.FACEBOOK_CLIENT_ID || 2284813674891103,
-    clientSecret: process.env.FACEBOOK_SECRET_ID || '814684da5fe1928b987a87efa09745ef',
     callbackURL: process.env.FACEBOOK_CALLBACK || '/auth/facebook/callback'*/
+    clientID: process.env.FACEBOOK_CLIENT_ID || 2284813674891103,
+    clientSecret: process.env.FACEBOOK_SECRET_ID || '814684da5fe1928b987a87efa09745ef',
+    callbackURL: process.env.FACEBOOK_CALLBACK || '/auth/facebook/callback'
   }
 
   passport.use(new LocalStrategy(localStrategy));
