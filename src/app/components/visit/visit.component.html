@@ -1,5 +1,5 @@
 <!doctype html>
-<nav class="navbar-fixed-top">
+<!--<nav class="navbar-fixed-top">
   <div class="container">
     <div class="navbar-text float-left">
       <ul class="nav">
@@ -14,12 +14,60 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav>-->
 <body>
-<p>My Google Maps Demo</p>
-<agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
-  <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
+<div class="topnav">
+  <div class="left-nav-links">
+    <a class="nav-link" href="#">HOME</a>
+    <a class="nav-link" [routerLink]="['/Showroom']">INSPIRATION</a>
+  </div>
+  <div class="right-nav-links">
+    <a class="nav-link" [routerLink]="['/MyAccount']">MY ACCOUNT</a>
+    <a [routerLink]="['/wishList']"><i class="fa fa-star" id="star-color"></i></a>
+    <a class="nav-link" href="#">CART</a>
+  </div>
+</div>
+<img class="store-image" src="/assets/images/Storefront.jpg">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h4>Upcoming Events</h4>
+      <br/>
+      <img class="calendar" src="/assets/images/Calendar.png">
+    </div>
+    <div class="col">
+      <h4>Address & Directions</h4>
+      <br/>
+      <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
+        <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+    </div>
+  </div>
+</div>
+<footer id="homepage-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h5>Our Company</h5>
+        <br/>
+        About Us
+        <br/>
+        Careers
+        <br/>
+        <a class="visit-style" [routerLink]="['/VisitUs']"> Visit Us</a>
+      </div>
+      <div class="col">
+        <h5>Customer Service</h5>
+        <br/>
+        Sign Up for Email
+        <br/>
+        Seller Information
+        <br/>
+        FAQs
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 </body>

@@ -1,3 +1,11 @@
-<p>
-  about-us works!
-</p>
+<div class="topnav">
+  <div class="left-nav-links">
+    <a class="nav-link" href="#">HOME</a>
+    <a class="nav-link" [routerLink]="['/Showroom']">INSPIRATION</a>
+  </div>
+  <div class="right-nav-links">
+    <a class="nav-link" [routerLink]="['/MyAccount']">MY ACCOUNT</a>
+    <a [routerLink]="['/wishList']"><i class="fa fa-star" id="star-color"></i></a>
+    <a class="nav-link" href="#">CART</a>
+  </div>
+</div>

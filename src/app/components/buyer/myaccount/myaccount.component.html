@@ -1,4 +1,4 @@
-<nav class="navbar-fixed-top">
+<!--<nav class="navbar-fixed-top">
   <div class="container">
     <div class="navbar-text float-left">
       <ul class="nav">
@@ -14,8 +14,19 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav>-->
 <body>
+<div class="topnav">
+  <div class="left-nav-links">
+    <a class="nav-link" href="#">HOME</a>
+    <a class="nav-link" [routerLink]="['/Showroom']">INSPIRATION</a>
+  </div>
+  <div class="right-nav-links">
+    <a class="nav-link" [routerLink]="['/MyAccount']">MY ACCOUNT</a>
+    <a [routerLink]="['/wishList']"><i class="fa fa-star" id="star-color"></i></a>
+    <a class="nav-link" href="#">CART</a>
+  </div>
+</div>
 <!--Side Nav Bar-->
 <div class="sidenav">
   <a class="navbar-brand" href="#">MY ACCOUNT</a>
