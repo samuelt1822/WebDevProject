@@ -141,5 +141,9 @@ a:link {
 .home-title {
   margin-top: 50px;
 }
+.visit-style {
+  text-decoration: none;
+  color: #36332A;
+}
 
 

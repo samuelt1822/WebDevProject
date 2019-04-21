@@ -1,20 +1,4 @@
-<!--<nav class="navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-text float-left">
-      <ul class="nav">
-        <li> <a class="nav-link" href="#">HOME</a> </li>
-        <li> <a class="nav-link" [routerLink]="['/Showroom']">SHOWROOMS</a> </li>
-      </ul>
-    </div>
-    <div class="navbar-text float-right">
-      <ul class="nav">
-        <li> <a class="nav-link" [routerLink]="['/MyAccount']">MY ACCOUNT</a> </li>
-        <li> <a routerLink="/wishList"><i class="fa fa-star" id="star-color"></i></a> </li>
-        <li> <a class="nav-link" href="#">CART</a> </li>
-      </ul>
-    </div>
-  </div>
-</nav>-->
+
 <body>
 <div class="topnav">
   <div class="left-nav-links">
@@ -27,29 +11,29 @@
     <a class="nav-link" href="#">CART</a>
   </div>
 </div>
-<!--Side Nav Bar-->
-<div class="sidenav">
-  <a class="navbar-brand" href="#">MY ACCOUNT</a>
-  <ul class="nav navbar-nav">
-    <li><a routerLink="/wishList">WishList</a></li>
-    <li><a href="#">Payment Methods</a></li>
-    <li><a href="#">Order History</a></li>
-    <li><a href="#">Profile</a></li>
-    <li *ngIf="!user.isSeller"><a (click)="updateAsSeller()">Become a Seller</a></li>
-    <li *ngIf="user.isSeller"><a href="#">Instructables Posted</a></li>
-  </ul>
-</div>
-<!--end of side nav bar-->
-<div class="side-wrapper">
 
-<p>
-  MY ACCOUNT
-</p>
-<p>
+
+<div class="side-wrapper">
+  <!--Side Nav Bar-->
+  <div class="sidenav">
+    <p class="navbar-brand">Explore Your Account</p>
+    <br/>
+    <hr>
+    <ul class="nav navbar-nav">
+      <li><a id="optima-link-font" routerLink="/wishList">WishList</a></li>
+      <li><a id="optima-link-font2" href="#" >Payment Methods</a></li>
+      <li><a id="optima-link-font3" href="#">Purchase History</a></li>
+      <li><a id="optima-link-font4" href="#">Profile</a></li>
+      <li *ngIf="!user.isSeller"><a id="optima-link-font5"(click)="updateAsSeller()">Become a Seller</a></li>
+      <li *ngIf="user.isSeller"><a id="optima-link-font6" href="#">Instructables</a></li>
+    </ul>
+  </div>
+  <!--end of side nav bar-->
+  <div class="account-body">
+<p id="account-welcome">
   Welcome to your account! You may update your information below or use the menu on the left to
   continue to navigate the site.
 </p>
-<div class="container">
   <br/>
   <label>Username</label>
   <input [(ngModel)]="user['username']" type="text" class="form-control" id="username" placeholder="Alice"/>
@@ -67,25 +51,42 @@
   <input [(ngModel)]="user['email']" class="form-control" id="email" placeholder="Email"/>
   <br/>
   <!--wrapped in a reload to refresh profile with updated information-->
-  <button (click)="refresh()"><a class="btn btn-success btn-block" id="update-button" (click)="update()">
-    Update</a></button>
+  <button class="btn btn-dark btn-sm" (click)="refresh()">
+    <a class="btn btn-dark btn-lg" id="update-button" (click)="update()">Update</a>
+  </button>
+    <br/>
   <!--<a class="btn btn-success btn-block" id="update-button" (click)="update()">Update</a>-->
-  <a class="btn btn-danger btn-block" id="logout-button" (click)="logout()">Logout</a>
-
-
-
-
+    <button class="btn btn-dark btn-sm">
+      <a class="btn btn-dark btn-lg" id="logout-button" (click)="logout()">Logout</a>
+    </button>
 </div>
 </div>
+<footer id="homepage-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h5>Our Company</h5>
+        <br/>
+        About Us
+        <br/>
+        Careers
+        <br/>
+        <a class="visit-style" [routerLink]="['/VisitUs']"> Visit Us</a>
+      </div>
+      <div class="col">
+        <h5>Customer Service</h5>
+        <br/>
+        Sign Up for Email
+        <br/>
+        Seller Information
+        <br/>
+        FAQs
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
-<br/>
-<br/>
-<br/>
-<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <!--<footer id="homepage-footer">
   <div class="container-fluid">
     <img class="footer-img" src="/assets/WebDevFooter.png">

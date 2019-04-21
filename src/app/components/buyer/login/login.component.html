@@ -24,12 +24,14 @@
         <label>Username</label>
         <input type="text" class="form-control" name="username" placeholder="Username"
            ngModel required #username="ngModel"/>
+        <span class="help-block" *ngIf="!username.valid && username.touched"> Username is required. </span>
         <br/>
         <label>Password</label>
         <input type="password" class="form-control" name="password" placeholder="Password"
              ngModel required #password="ngModel"/>
+        <span class="help-block" *ngIf="!password.valid && password.touched"> Password is required. </span>
         <br/>
-        <button class="btn btn-dark btn-lg" type="submit" [disabled]="!form.valid">Log In</button>
+        <button class="btn btn-dark btn-lg" type="submit">Log In</button>
         <br/>
         <a href="/facebook/login" class="btn btn-dark btn-lg"> <span class="fa fa-facebook"></span> Facebook </a>
       </form>

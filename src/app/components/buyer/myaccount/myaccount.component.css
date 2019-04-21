@@ -15,18 +15,14 @@
 .nav ul li {
   display: inline-block;
   padding: 16px 32px;
+  font-family: Optima, sans-serif;
+  font-size: 10px;
 }
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
+
 .title {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-body {
-  margin-top: 100px;
 }
 .card-img-top2 {
   height: 185px;
@@ -53,10 +49,9 @@ body {
 #homepage-footer {
   position: absolute;
   height: 150px;
-  width: 100%;
+  width: 110%;
   margin-top: 50px;
-  bottom:0;
-  background-image: url('https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+  background-image: url('/assets/images/HomepageBackground2.jpg');
 }
 #account-link {
   color: black;
@@ -78,13 +73,13 @@ body {
   transition: all 0.3s;
 }
 .sidenav {
-  height: 100%;
-  width: 160px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -104,6 +99,8 @@ body {
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+  margin-top: 50px;
+  margin-bottom: 150px;
 }
 #star-color {
   color: black;
@@ -118,7 +115,7 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -166,4 +163,57 @@ body {
 }
 .home-title {
   margin-top: 50px;
+}
+.navbar-brand {
+  font-family: Optima, sans-serif;
+  font-size: 19px;
+}
+.account-body {
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+#optima-link-font {
+  font-family: Optima, sans-serif;
+  font-size: 16px;
+}
+#optima-link-font2 {
+  font-family: Optima, sans-serif;
+  font-size: 16px;
+}
+#optima-link-font3 {
+  font-family: Optima, sans-serif;
+  font-size: 16px;
+}
+#optima-link-font4 {
+  font-family: Optima, sans-serif;
+  font-size: 16px;
+}
+#optima-link-font5 {
+  font-family: Optima, sans-serif;
+  font-size: 16px;
+}
+#optima-link-font6 {
+  font-family: Optima, sans-serif;
+  font-size: 16px;
+}
+label {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 22px;
+}
+#account-welcome {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 20px;
+}
+#update-button {
+  color: white;
+  font-size: 15px;
+}
+#logout-button {
+  color: white;
+  font-size: 15px;
+}
+.visit-style {
+  text-decoration: none;
+  color: #36332A;
 }

@@ -53,7 +53,7 @@ a {
   width: 100%;
   margin-top: 50px;
   bottom:0;
-  background-image: url('https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+  background-image: url('/assets/images/HomepageBackground2.jpg');
 }
 .register-header {
   font-family: Optima, sans-serif;
@@ -127,5 +127,9 @@ a {
 .btn {
   padding-left: 10px;
   padding-right: 10px;
+}
+.visit-style {
+  text-decoration: none;
+  color: #36332A;
 }
 

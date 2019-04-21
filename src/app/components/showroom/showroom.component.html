@@ -10,7 +10,7 @@
     <a class="nav-link" href="#">CART</a>
   </div>
 </div>
-<div class="row">
+<!--<div class="row">
   <div class="container2">
     <div class="col-12 col-md-8">
       <img class="img-fluid" src="/assets/images/LivingRoomShowroom.jpg">
@@ -49,5 +49,54 @@
       <h2>Outdoor Spaces</h2>
     </a>
   </div>
+</div>-->
+
+<div class="container">
+  <div class="gallery">
+    <figure class="gallery__item gallery__item--1">
+      <a class="livingRoom" [routerLink]="['/LivingRoom']">
+      <img src="/assets/images/LivingRoomShowroom.jpg" alt="Gallery image 1" class="gallery__img">
+      </a>
+    </figure>
+    <figure class="gallery__item gallery__item--2">
+      <a [routerLink]="['/Bathroom']">
+        <img src="/assets/images/BathroomShowroom.jpg" alt="Gallery image 2" class="gallery__img">
+      </a>
+    </figure>
+    <figure class="gallery__item gallery__item--3">
+      <a [routerLink]="['/Outdoor']">
+        <img src="/assets/images/OutdoorShowroom.png" alt="Gallery image 3" class="gallery__img">
+      </a>
+    </figure>
+    <figure class="gallery__item gallery__item--4">
+      <a [routerLink]="['/Bedroom']">
+        <img src="/assets/images/BedroomShowroom.jpg" alt="Gallery image 4" class="gallery__img">
+      </a>
+    </figure>
+  </div>
 </div>
+<footer id="homepage-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h5>Our Company</h5>
+        <br/>
+        About Us
+        <br/>
+        Careers
+        <br/>
+        <a class="visit-style" [routerLink]="['/VisitUs']"> Visit Us</a>
+      </div>
+      <div class="col">
+        <h5>Customer Service</h5>
+        <br/>
+        Sign Up for Email
+        <br/>
+        Seller Information
+        <br/>
+        FAQs
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
