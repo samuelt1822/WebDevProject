@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DiySComponent } from './diy-s.component';
+import { DiyNewComponent } from './diy-new.component';
 
-describe('DiySComponent', () => {
-  let component: DiySComponent;
-  let fixture: ComponentFixture<DiySComponent>;
+describe('DiyNewComponent', () => {
+  let component: DiyNewComponent;
+  let fixture: ComponentFixture<DiyNewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DiySComponent ]
+      declarations: [ DiyNewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DiySComponent);
+    fixture = TestBed.createComponent(DiyNewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

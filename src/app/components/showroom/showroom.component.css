@@ -245,20 +245,8 @@ html {
   grid-row-start: 6;
   grid-row-end: 12;
 }
-
-
-.hover-text .hover-text-layer_slideleft {
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%);
-}
-.hover-text:hover .hovertext-layer_slideleft,
-.hover-text.active .hover-text-layer_slideleft {
-  -moz-transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
+.col {
+  padding-left: 120px;
 }
 
 

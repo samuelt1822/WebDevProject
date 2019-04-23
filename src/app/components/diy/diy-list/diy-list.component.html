@@ -1,0 +1,86 @@
+<body>
+<div class="topnav">
+  <div class="left-nav-links">
+    <a class="nav-link" href="#">HOME</a>
+    <a class="nav-link" [routerLink]="['/Showroom']">INSPIRATION</a>
+  </div>
+  <div class="right-nav-links">
+    <a class="nav-link" [routerLink]="['/MyAccount']">MY ACCOUNT</a>
+    <a [routerLink]="['/wishList']"><i class="fa fa-star" id="star-color"></i></a>
+    <a class="nav-link" href="#">CART</a>
+  </div>
+</div>
+<div class="side-wrapper">
+  <!--Side Nav Bar-->
+  <div class="sidenav">
+    <p class="navbar-brand">Explore Your Account</p>
+    <br/>
+    <hr>
+    <ul class="nav navbar-nav">
+      <li><a id="optima-link-font" routerLink="/wishList">WishList</a></li>
+      <li><a id="optima-link-font2" href="#" >Shipping Methods</a></li>
+      <li><a id="optima-link-font3" href="#">Items Sold</a></li>
+      <li><a id="optima-link-font4" [routerLink]="['/MyAccount']">Profile</a></li>
+      <li><a id="optima-link-font6" routerLink="/diy-new">Sell an Instructable</a></li>
+    </ul>
+  </div>
+
+  <div class="shopping-cart">
+  <!-- Title -->
+  <div class="title">
+    My Instructables
+  </div>
+  <ul id="bulletLessList">
+    <li *ngFor = "let diy of diys">
+      <div class="diy-posts">
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"(click)="refresh()"><a (click)="delete(diy._id)"><i class="fa fa-trash" id="trash-color"></i></a></span>
+          </div>
+          <div class="buttons">
+            <span class="delete-btn">
+              <a routerLink="/diy-edit/{{diy._id}}"><i class="fas fa-cog fontawsome_icon" id="cog-color"></i></a>
+            </span>
+          </div>
+          <!--<div class="image">
+            <img [src]="diy.url">
+          </div>-->
+          <div class="description">
+            <span>{{diy.name}}</span>
+          </div>
+          <div class="description">
+            <span>{{diy.difficulty}}</span>
+          </div>
+          <div class="total-price">{{diy.cost}}</div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  </div>
+  <br/>
+</div>
+<footer id="homepage-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h5>Our Company</h5>
+        <br/>
+        About Us
+        <br/>
+        Careers
+        <br/>
+        <a class="visit-style" [routerLink]="['/VisitUs']"> Visit Us</a>
+      </div>
+      <div class="col">
+        <h5>Customer Service</h5>
+        <br/>
+        Sign Up for Email
+        <br/>
+        Seller Information
+        <br/>
+        FAQs
+      </div>
+    </div>
+  </div>
+</footer>
+</body>

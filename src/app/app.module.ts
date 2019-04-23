@@ -21,10 +21,13 @@ import { LivingRoomComponent } from './components/showroom/living-room/living-ro
 import { BedroomComponent } from './components/showroom/bedroom/bedroom.component';
 import { BathroomComponent } from './components/showroom/bathroom/bathroom.component';
 import { OutdoorRoomsComponent } from './components/showroom/outdoor-rooms/outdoor-rooms.component';
-import {WishlistServiceClient} from './services/wishlist.service.client';
+import { WishlistServiceClient } from './services/wishlist.service.client';
 import { AboutUsComponent } from './components/company/about-us/about-us.component';
 import { VisitComponent } from './components/visit/visit.component';
-import { DiySComponent } from './components/diy-s/diy-s.component';
+import { DiyListComponent } from './components/diy/diy-list/diy-list.component';
+import { DiyNewComponent } from './components/diy/diy-new/diy-new.component';
+import { DiyEditComponent } from './components/diy/diy-edit/diy-edit.component';
+import {DiyServiceClient} from './services/diy.service.client';
 
 
 @NgModule({
@@ -44,7 +47,9 @@ import { DiySComponent } from './components/diy-s/diy-s.component';
     OutdoorRoomsComponent,
     AboutUsComponent,
     VisitComponent,
-    DiySComponent,
+    DiyListComponent,
+    DiyNewComponent,
+    DiyEditComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,7 +60,7 @@ import { DiySComponent } from './components/diy-s/diy-s.component';
       apiKey: 'AIzaSyAj1T9BN60_cl5m6y3jmHvmIiig0lCWgvo'
     })
   ],
-  providers: [UserServiceClient, WishlistServiceClient, SharedService, AuthGuard],
+  providers: [UserServiceClient, DiyServiceClient, WishlistServiceClient, SharedService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

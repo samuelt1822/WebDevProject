@@ -1,110 +1,75 @@
-.navbar-fixed-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 50px;
-  background-color: #3E9A4A;
+.topnav {
+  overflow: hidden;
+  background-color: #75B277;
 }
-.nav {
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+
+  color: #F2BC51;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+.left-nav-links {
+  float: left;
+}
+.right-nav-links {
   float: right;
-  margin: 0;
-  padding-right: 42px;
-}
-.nav ul li {
-  display: inline-block;
-  padding: 16px 32px;
 }
 a {
   text-decoration: none;
   color: #ffffff;
 }
-.title {
+.livingRoomHeader {
+  margin: 0 auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 70px;
 }
-body {
-  margin-top: 100px;
-}
-.card-img-top2 {
-  height: 185px;
-  width: 237px;
-
-}
-.navbar-fixed-bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  padding-top: 250px;
-}
-
-.carousel-image {
-  width: 100%;
+.outdoorSeparator {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
   padding-top: 50px;
-  padding-bottom: 50px;
-  height: 600px;
-}
-#black-login {
-  color: darkgray;
-}
-#homepage-footer {
-  position: absolute;
-  height: 150px;
-  width: 100%;
-  margin-top: 50px;
-  bottom:0;
-  background-image: url('https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
-}
-#account-link {
-  color: black;
-}
-.wrapper {
-  display: flex;
-  width: 100%;
 }
 
-#sidebar {
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 999;
-  background: #7386D5;
-  color: #fff;
-  transition: all 0.3s;
-}
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-.side-wrapper {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
 .container2 {
   position: relative;
 }
@@ -134,6 +99,58 @@ hr.style13 {
   border: 0;
   box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
-.black {
-  color: black;
+#homepage-footer {
+  position: absolute;
+  height: 150px;
+  width: 110%;
+  margin-top: 50px;
+  background-image: url('/assets/images/HomepageBackground2.jpg');
 }
+.visit-style {
+  text-decoration: none;
+  color: #36332A;
+}
+.table-font {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.room-images {
+  width: 350px;
+  height: 450px;
+}
+
+
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.column .overlay {
+  position: absolute;
+  text-align: center;
+  color: white;
+  left: 90%;
+  top: 80%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: dimgray;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+

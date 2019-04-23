@@ -10,39 +10,51 @@
     <a class="nav-link" href="#">CART</a>
   </div>
 </div>
-<img style="align: center" src="/assets/images/LivingRoom1.png">
-<hr class="style13">
-<table class="table">
-  <thead class="thead-dark">
-  <tr>
-    <th scope="col">Buy</th>
-    <th scope="col">DIY</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <div class="container2">
-      <td><img src="/assets/images/BookShelf_LR_Buy.png"></td>
-      <div class="text-block-upper">
-        <i class="fa fa-star"></i>
+<img class="livingRoomHeader" src="/assets/images/LivingRoom1.png">
+<p class="outdoorSeparator">Shop Living Room Collections</p>
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <div class="overlay">
+        Buy
+        <br/>
+        $119
       </div>
-      <div class="text-block">
-        <a href="https://www.westelm.com/products/7952019/?catalogId=18&cm_re=curalate-_-livingroom&utm_source=curalate
-        _reveal&utm_medium=curalate_reveal_6860&crl8_id=2ac80c8d-df38-442c-addb-93ead83ddf22">
-          <h2>$119 <br/> Buy</h2>
-        </a>
+      <img class="room-images" src="/assets/images/BookShelf_LR_Buy.png">
+    </div>
+  </div>
+    <div class="column">
+      <div class="overlay">
+        DIY
+        <br/>
+        $69
+      </div>
+      <img class="room-images" src="/assets/images/DIYBookshelf_LR.jpg">
+  </div>
+</div>
+<br/>
+<footer id="homepage-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h5>Our Company</h5>
+        <br/>
+        About Us
+        <br/>
+        Careers
+        <br/>
+        <a class="visit-style" [routerLink]="['/VisitUs']"> Visit Us</a>
+      </div>
+      <div class="col">
+        <h5>Customer Service</h5>
+        <br/>
+        Sign Up for Email
+        <br/>
+        Seller Information
+        <br/>
+        FAQs
       </div>
     </div>
-    <div class="container3">
-      <td><img style="width:448px; height:480px"src="/assets/images/DIYBookshelf_LR.jpg"></td>
-      <div class="text-block">
-        <i class="fa fa-star-o"></i>
-        <a [routerLink]="['/Bathroom']">
-          <h2>$79 <br/> DIY</h2>
-        </a>
-      </div>
-    </div>
-  </tr>
-  </tbody>
-</table>
+  </div>
+</footer>
 </body>

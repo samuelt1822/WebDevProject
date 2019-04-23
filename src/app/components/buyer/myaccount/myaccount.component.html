@@ -1,4 +1,3 @@
-
 <body>
 <div class="topnav">
   <div class="left-nav-links">
@@ -11,8 +10,6 @@
     <a class="nav-link" href="#">CART</a>
   </div>
 </div>
-
-
 <div class="side-wrapper">
   <!--Side Nav Bar-->
   <div class="sidenav">
@@ -23,9 +20,9 @@
       <li><a id="optima-link-font" routerLink="/wishList">WishList</a></li>
       <li><a id="optima-link-font2" href="#" >Payment Methods</a></li>
       <li><a id="optima-link-font3" href="#">Purchase History</a></li>
-      <li><a id="optima-link-font4" href="#">Profile</a></li>
+      <li><a id="optima-link-font4" [routerLink]="['/MyAccount']">Profile</a></li>
       <li *ngIf="!user.isSeller"><a id="optima-link-font5"(click)="updateAsSeller()">Become a Seller</a></li>
-      <li *ngIf="user.isSeller"><a id="optima-link-font6" href="#">Instructables</a></li>
+      <li *ngIf="user.isSeller"><a id="optima-link-font6" routerLink="/diy">Instructables</a></li>
     </ul>
   </div>
   <!--end of side nav bar-->
@@ -87,8 +84,3 @@
 </footer>
 </body>
 
-<!--<footer id="homepage-footer">
-  <div class="container-fluid">
-    <img class="footer-img" src="/assets/WebDevFooter.png">
-  </div>
-</footer>-->

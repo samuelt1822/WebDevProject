@@ -12,8 +12,9 @@ import {OutdoorRoomsComponent} from './components/showroom/outdoor-rooms/outdoor
 import {WishlistComponent} from './components/wishlist/wishlist.component';
 import {AuthGuard} from './services/auth-guard.service';
 import {VisitComponent} from './components/visit/visit.component';
-import {DiySComponent} from './components/diy-s/diy-s.component';
-
+import {DiyListComponent} from './components/diy/diy-list/diy-list.component';
+import {DiyEditComponent} from './components/diy/diy-edit/diy-edit.component';
+import {DiyNewComponent} from './components/diy/diy-new/diy-new.component';
 
 
 const routes: Routes = [
@@ -28,9 +29,12 @@ const routes: Routes = [
   {path: 'Bedroom', component: BedroomComponent},
   {path: 'Outdoor', component: OutdoorRoomsComponent},
   {path: 'wishList', component: WishlistComponent, canActivate: [AuthGuard]},
-  {path: 'user/:uid', component: WishlistComponent},
+  // {path: 'user/:uid', component: WishlistComponent},
   {path: 'VisitUs', component: VisitComponent},
-  {path: 'user/:uid/DIYs', component: DiySComponent}
+   {path: 'diy', component: DiyListComponent, canActivate: [AuthGuard]},
+  // {path: 'diy-edit', component: DiyEditComponent, canActivate: [AuthGuard]},
+   {path: 'diy-edit/:diyid', component: DiyEditComponent, canActivate: [AuthGuard]},
+  {path: 'diy-new', component: DiyNewComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({

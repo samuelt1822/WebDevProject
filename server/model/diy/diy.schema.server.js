@@ -1,18 +1,19 @@
 var mongoose = require('mongoose');
 
-var diy_sSchema = mongoose.Schema(
+var diySchema = mongoose.Schema(
   {
     name: String,
     userId: {type: mongoose.Schema.Types.ObjectId, ref: 'UserModel'},
     description: String,
-    category: String,
     cost: String,
     difficulty: String,
-    itemsNeeded: String,
+    toolsNeeded: String,
+    supplies: String,
+    url: String,
     dateCreate: {type: Date, default: Date.now()}
 
-  },{collection: 'DIYs'}
+  }, {collection: 'DIY'}
 );
 
-module.exports = diy_sSchema;
-//would like to add in image
+module.exports = diySchema;
+

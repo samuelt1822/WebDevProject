@@ -1,0 +1,77 @@
+<body>
+<div class="topnav">
+  <div class="left-nav-links">
+    <a class="nav-link" href="#">HOME</a>
+    <a class="nav-link" [routerLink]="['/Showroom']">INSPIRATION</a>
+  </div>
+  <div class="right-nav-links">
+    <a class="nav-link" [routerLink]="['/MyAccount']">MY ACCOUNT</a>
+    <a [routerLink]="['/wishList']"><i class="fa fa-star" id="star-color"></i></a>
+    <a class="nav-link" href="#">CART</a>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="form-group">
+    <label>Instructable Name</label>
+      <input [(ngModel)] = "diy['name']" [ngModelOptions]="{standalone: true}" type="text" class="form-control"
+             id="diy-name2" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <textarea [(ngModel)] = "diy['description']" [ngModelOptions]="{standalone: true}" id="diy-description"
+              class="form-control" rows="5" placeholder="Description"></textarea>
+  </div>
+  <div class="form-group">
+    <label>Cost</label>
+    <input [(ngModel)] = "diy['cost']" [ngModelOptions]="{standalone: true}" type="text" class="form-control"
+           id="diy-cost" placeholder="Cost">
+  </div>
+  <div class="form-group">
+    <label>Difficulty</label>
+    <input [(ngModel)] = "diy['difficulty']" [ngModelOptions]="{standalone: true}" type="text" class="form-control"
+           id="diy-difficulty" placeholder="Difficulty">
+  </div>
+  <div class="form-group">
+    <label>Tools Needed</label>
+    <input [(ngModel)] = "diy['toolsNeeded']" [ngModelOptions]="{standalone: true}" type="text" class="form-control"
+           id="diy-tools" placeholder="Tools Needed">
+  </div>
+  <div class="form-group">
+    <label>Supplies</label>
+    <input [(ngModel)] = "diy['supplies']" [ngModelOptions]="{standalone: true}" type="text" class="form-control"
+           id="diy-supplies" placeholder="Supplies">
+  </div>
+  <div class="form-group">
+    <label>Image</label>
+    <input [(ngModel)] = "diy['url']" [ngModelOptions]="{standalone: true}" type="text" class="form-control"
+           id="diy-image" placeholder="Image URL">
+  </div>
+  <a class="btn btn-dark btn-lg" id="diy-edit-button" (click)="update()">Update</a>
+  <br/>
+  <a class="btn btn-dark btn-lg" [routerLink]="['/diy']">Cancel</a>
+</div>
+<footer id="homepage-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h5>Our Company</h5>
+        <br/>
+        About Us
+        <br/>
+        Careers
+        <br/>
+        <a class="visit-style" [routerLink]="['/VisitUs']"> Visit Us</a>
+      </div>
+      <div class="col">
+        <h5>Customer Service</h5>
+        <br/>
+        Sign Up for Email
+        <br/>
+        Seller Information
+        <br/>
+        FAQs
+      </div>
+    </div>
+  </div>
+</footer>
+</body>

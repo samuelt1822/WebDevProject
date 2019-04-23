@@ -1,75 +1,3 @@
-.navbar-fixed-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 50px;
-  background-color: #3E9A4A;
-}
-.nav {
-  float: right;
-  margin: 0;
-  padding-right: 42px;
-}
-.nav ul li {
-  display: inline-block;
-  padding: 16px 32px;
-}
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-.title {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.card-img-top2 {
-  height: 185px;
-  width: 237px;
-
-}
-.navbar-fixed-bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  padding-top: 250px;
-}
-
-.carousel-image {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  height: 600px;
-}
-#black-login {
-  color: darkgray;
-}
-#homepage-footer {
-  position: absolute;
-  height: 150px;
-  width: 100%;
-  margin-top: 50px;
-  bottom:0;
-  background-image: url('/assets/images/HomepageBackground2.jpg');
-}
-#account-link {
-  color: black;
-}
-.account-header {
-  font-family: Optima, sans-serif;
-  font-size: 20px;
-  margin-left: 10px;
-  margin-top: 40px;
-}
-hr.style13 {
-  height: 10px;
-  border: 0;
-  box-shadow: 0 10px 10px -10px #8c8b8b inset;
-}
-
 .topnav {
   overflow: hidden;
   background-color: #75B277;
@@ -125,20 +53,29 @@ hr.style13 {
 .right-nav-links {
   float: right;
 }
-.home-title {
-  margin-top: 50px;
+.account-header {
+  font-family: Optima, sans-serif;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 40px;
 }
 #homepage-footer {
   position: absolute;
   height: 150px;
-  width: 110%;
+  width: 100%;
   margin-top: 50px;
+  bottom:0;
   background-image: url('/assets/images/HomepageBackground2.jpg');
-}
-p {
-  font-size: 20px;
 }
 .visit-style {
   text-decoration: none;
   color: #36332A;
 }
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+p {
+  font-size: 20px;
+}
+

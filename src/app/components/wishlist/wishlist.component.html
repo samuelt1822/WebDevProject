@@ -1,31 +1,41 @@
-<nav class="navbar-fixed-top">
+<body>
+<div class="topnav">
+  <div class="left-nav-links">
+    <a class="nav-link" href="#">HOME</a>
+    <a class="nav-link" [routerLink]="['/Showroom']">INSPIRATION</a>
+  </div>
+  <div class="right-nav-links">
+    <a class="nav-link" [routerLink]="['/MyAccount']">MY ACCOUNT</a>
+    <a [routerLink]="['/wishList']"><i class="fa fa-star" id="star-color"></i></a>
+    <a class="nav-link" href="#">CART</a>
+  </div>
+</div>
+
+<p>WishList Coming Soon!</p>
+
+<footer id="homepage-footer">
   <div class="container">
-    <div class="navbar-text float-left">
-      <ul class="nav">
-        <li> <a class="nav-link" href="#">HOME</a> </li>
-        <li> <a class="nav-link" [routerLink]="['/Showroom']">SHOWROOMS</a> </li>
-      </ul>
-    </div>
-    <div class="navbar-text float-right">
-      <ul class="nav">
-        <li *ngIf=" "> <a class="nav-link" [routerLink]="['/MyAccount']">MY ACCOUNT</a> </li>
-        <li> <a class="nav-link" href="#">CART</a> </li>
-      </ul>
+    <div class="row">
+      <div class="col">
+        <h5>Our Company</h5>
+        <br/>
+        About Us
+        <br/>
+        Careers
+        <br/>
+        <a class="visit-style" [routerLink]="['/VisitUs']"> Visit Us</a>
+      </div>
+      <div class="col">
+        <h5>Customer Service</h5>
+        <br/>
+        Sign Up for Email
+        <br/>
+        Seller Information
+        <br/>
+        FAQs
+      </div>
     </div>
   </div>
-</nav>
-<body>
-<!--Side Nav Bar-->
-<div class="sidenav">
-  <a class="navbar-brand" href="#">MY ACCOUNT</a>
-  <ul class="nav navbar-nav">
-    <li><a href="#">WishList</a></li>
-    <li><a href="#">Payment Methods</a></li>
-    <li><a href="#">Order History</a></li>
-    <li><a href="#">Profile</a></li>
-  </ul>
-</div>
-<!--end of side nav bar-->
-<div class="side-wrapper">
-</div>
+</footer>
+
 </body>
