@@ -72,8 +72,9 @@
     <input [(ngModel)] = "diy['url']" [ngModelOptions]="{standalone: true}" type="text" class="form-control"
            id="diy-image" placeholder="Image URL">
   </div>
-  <a class="btn btn-success btn-block" id="addWebsite-button" (click)="create()">Add</a>
-  <!--<a class="btn btn-primary btn-block" routerLink="/profile/{{userId}}/website">Websites</a>-->
+  <a class="btn btn-dark btn-lg" id="addWebsite-button" (click)="create()">Add</a>
+  <br/>
+  <a class="btn btn-dark btn-lg" [routerLink]="['/diy']">Cancel</a>
 </div>
 <footer id="homepage-footer">
   <div class="container">

@@ -71,3 +71,9 @@ a {
 p {
   font-size: 20px;
 }
+.container-fluid {
+  width: 80%;
+}
+#addWebsite-button {
+  color: white;
+}
